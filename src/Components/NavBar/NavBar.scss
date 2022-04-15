@@ -1,0 +1,50 @@
+$iconS: 33px;
+$iconC: rgb(209, 49, 49);
+
+.NavBar {
+    display: grid;
+    grid-template-rows: 80px 1fr 80px;
+    grid-template-columns: 1fr;
+    row-gap: 120px;
+    justify-content: center;
+
+    .logo {
+        color: $iconC;
+        font-size: 30px;
+        justify-self: center;
+        align-self: center;
+    }
+
+    .icon,
+    .icon svg {
+        height: $iconS;
+        width: $iconS;
+        justify-self: center;
+        align-self: center;
+        fill: $iconC;
+        transition: fill 0.2s ease-out, background-color 0.2s ease-out;
+    }
+    .icon {
+        padding: 7px;
+        border-radius: 100%;
+    }
+    .icon:hover {
+        cursor: pointer;
+        background-color: $iconC;
+        & svg {
+            fill: white;
+        }
+    }
+
+    .current-icon {
+        background-color: $iconC;
+        & svg {
+            fill: white;
+        }
+    }
+
+    .dashboard-icons {
+        display: grid;
+        grid-template-rows: repeat(4, 1fr);
+    }
+}

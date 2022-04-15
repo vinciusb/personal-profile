@@ -1,0 +1,22 @@
+$bColor: #e7dfd6;
+
+.App {
+  text-align: center;
+  height: 100%;
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: 1fr 11fr;
+
+  padding: 30px 20px 50px 0px;
+  box-sizing: border-box;
+
+  background-color: $bColor;
+
+  font-family: "Roboto";
+
+  h1 {
+    font-size: 30px;
+    margin: 0;
+  }
+}
