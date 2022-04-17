@@ -1,9 +1,11 @@
 import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
 import pagesSlice from './slices/pages';
+import classesSlice from './slices/classes';
 
 export const store = configureStore({
     reducer: {
         pages: pagesSlice,
+        classes: classesSlice,
     },
 });
 

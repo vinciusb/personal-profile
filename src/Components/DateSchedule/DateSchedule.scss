@@ -1,0 +1,31 @@
+.date-schedule {
+    height: 80%;
+    margin-top: 70px;
+    padding: 10px 5px 20px 5px;
+    border-radius: 8px;
+
+    display: grid;
+    column-gap: 4px;
+    grid-template-columns: 1fr 15px repeat(5, 1fr) 15px;
+
+    .hour-div {
+        background-image: radial-gradient(circle, rgba(0, 0, 0, 0.24) 90%, transparent 100%);
+        border-radius: 7px;
+        // z-index: 10;
+    }
+
+    .class {
+        color: white;
+        border-radius: 9px;
+        width: 85%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        justify-self: center;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}

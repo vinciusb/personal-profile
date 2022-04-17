@@ -3,7 +3,7 @@ import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { PageState, PageType } from '../../interfaces/interface';
 
 const initialState: PageState = {
-    page: PageType.Home,
+    page: PageType.Classes,
 };
 
 export const pageSlice = createSlice({

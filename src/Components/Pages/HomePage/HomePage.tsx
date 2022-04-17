@@ -32,6 +32,7 @@ const contacts = [
 
 const HomePage: React.FC<HomePageProps> = ({ className }: HomePageProps) => {
     const handleClick = (e: React.MouseEvent) => {
+        e.stopPropagation();
         const ID = Number(e.currentTarget.attributes[0].value);
         navigator.clipboard.writeText(contacts[ID].link).then(() => null);
     };

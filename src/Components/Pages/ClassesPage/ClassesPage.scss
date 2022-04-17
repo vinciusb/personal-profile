@@ -1,3 +1,8 @@
 .classes-page {
-    background-color: green;
+    grid-template-rows: 100px auto;
+
+    .periods {
+        grid-column: 2 / 12;
+        grid-row: 2;
+    }
 }

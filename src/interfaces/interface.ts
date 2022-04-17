@@ -13,6 +13,20 @@ interface IconProp {
     name: IconName;
 }
 
+// TimeLine
+interface TimeLineProps {
+    num: number;
+    last: number;
+    clicked: number;
+    setClicked: (id: number) => void;
+}
+
+// Date Schedule
+interface DateScheduleProps {
+    interval: [number, number];
+    period: Period;
+}
+
 //Pages
 interface PageProps {
     className?: string;
@@ -21,11 +35,40 @@ interface PageProps {
 type HomePageProps = PageProps;
 type ProgressPageProps = PageProps;
 type ClassesPageProps = PageProps;
-type ContactMePageProps = PageProps;
 
 // Redux
 interface PageState {
     page: PageType;
 }
 
-export type { IconProp, PageProps, HomePageProps, ProgressPageProps, ClassesPageProps, ContactMePageProps, PageState };
+interface Class {
+    name: string;
+    date: {
+        day: 'mon' | 'tue' | 'wed' | 'thu' | 'fri';
+        hour: [number, number, number, number];
+    }[];
+}
+
+interface Period {
+    semester: `202${number}/${1 | 2}`;
+    classes: Class[];
+}
+
+interface ClassState {
+    last: number;
+    periods: {
+        [order: number]: Period;
+    };
+}
+
+export type {
+    IconProp,
+    PageProps,
+    HomePageProps,
+    TimeLineProps,
+    DateScheduleProps,
+    ProgressPageProps,
+    ClassesPageProps,
+    PageState,
+    ClassState,
+};
