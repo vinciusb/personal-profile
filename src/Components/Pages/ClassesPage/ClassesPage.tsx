@@ -12,7 +12,7 @@ const ClassesPage: React.FC<ClassesPageProps> = ({ className }: ClassesPageProps
     const [clicked, setClicked] = useState(last);
     const [timeRange, setTimeRange] = useState<[number, number]>([17, 17]);
 
-    // Get the time range of the period
+    // Get the time range of the current period
     useEffect(() => {
         let min = 25,
             max = 0;
