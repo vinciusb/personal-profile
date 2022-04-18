@@ -7,15 +7,205 @@ const initialState: ClassState = {
     periods: {
         1: {
             semester: '2020/2',
-            classes: [],
+            classes: [
+                {
+                    name: 'Introduction to the Computational Logic',
+                    date: [
+                        {
+                            day: 'mon',
+                            hour: [19, 0, 20, 40],
+                        },
+                        {
+                            day: 'wed',
+                            hour: [19, 0, 20, 40],
+                        },
+                    ],
+                },
+                {
+                    name: 'Programming and Software Development I',
+                    date: [
+                        {
+                            day: 'tue',
+                            hour: [19, 0, 20, 40],
+                        },
+                        {
+                            day: 'thu',
+                            hour: [19, 0, 20, 40],
+                        },
+                    ],
+                },
+                {
+                    name: 'Fundamentals of Information Systems',
+                    date: [
+                        {
+                            day: 'wed',
+                            hour: [17, 0, 18, 40],
+                        },
+                    ],
+                },
+                {
+                    name: 'Analytical Geometry and Linear Algebra',
+                    date: [
+                        {
+                            day: 'tue',
+                            hour: [17, 0, 18, 40],
+                        },
+                        {
+                            day: 'thu',
+                            hour: [17, 0, 18, 40],
+                        },
+                    ],
+                },
+                {
+                    name: 'General Theory of Administration',
+                    date: [
+                        {
+                            day: 'fri',
+                            hour: [17, 0, 20, 40],
+                        },
+                    ],
+                },
+            ],
         },
         2: {
             semester: '2021/1',
-            classes: [],
+            classes: [
+                {
+                    name: 'Calculus I',
+                    date: [
+                        {
+                            day: 'mon',
+                            hour: [17, 0, 18, 40],
+                        },
+                        {
+                            day: 'wed',
+                            hour: [17, 0, 18, 40],
+                        },
+                        {
+                            day: 'fri',
+                            hour: [17, 0, 18, 40],
+                        },
+                    ],
+                },
+                {
+                    name: 'Computational Linear Algebra',
+                    date: [
+                        {
+                            day: 'tue',
+                            hour: [17, 0, 18, 40],
+                        },
+                        {
+                            day: 'thu',
+                            hour: [17, 0, 18, 40],
+                        },
+                    ],
+                },
+                {
+                    name: 'Discrete Math',
+                    date: [
+                        {
+                            day: 'mon',
+                            hour: [19, 0, 20, 40],
+                        },
+                        {
+                            day: 'wed',
+                            hour: [19, 0, 20, 40],
+                        },
+                    ],
+                },
+                {
+                    name: 'Programming and Software Development II',
+                    date: [
+                        {
+                            day: 'tue',
+                            hour: [19, 0, 20, 40],
+                        },
+                        {
+                            day: 'thu',
+                            hour: [19, 0, 20, 40],
+                        },
+                    ],
+                },
+                {
+                    name: 'Economy A - I',
+                    date: [
+                        {
+                            day: 'fri',
+                            hour: [19, 0, 22, 30],
+                        },
+                    ],
+                },
+            ],
         },
         3: {
             semester: '2021/2',
-            classes: [],
+            classes: [
+                {
+                    name: 'Calculus II',
+                    date: [
+                        {
+                            day: 'mon',
+                            hour: [17, 0, 18, 40],
+                        },
+                        {
+                            day: 'wed',
+                            hour: [17, 0, 18, 40],
+                        },
+                    ],
+                },
+                {
+                    name: 'Introduction to Logic Systems',
+                    date: [
+                        {
+                            day: 'mon',
+                            hour: [19, 0, 20, 40],
+                        },
+                        {
+                            day: 'fri',
+                            hour: [19, 0, 20, 40],
+                        },
+                    ],
+                },
+                {
+                    name: 'Introduction to Databases',
+                    date: [
+                        {
+                            day: 'tue',
+                            hour: [17, 0, 18, 40],
+                        },
+                        {
+                            day: 'thu',
+                            hour: [17, 0, 18, 40],
+                        },
+                    ],
+                },
+                {
+                    name: 'Data Structures',
+                    date: [
+                        {
+                            day: 'tue',
+                            hour: [19, 0, 20, 40],
+                        },
+                        {
+                            day: 'thu',
+                            hour: [19, 0, 20, 40],
+                        },
+                    ],
+                },
+                {
+                    name: 'Statistics and Probabilities',
+                    date: [
+                        {
+                            day: 'wed',
+                            hour: [19, 0, 20, 40],
+                        },
+                        {
+                            day: 'fri',
+                            hour: [17, 0, 18, 40],
+                        },
+                    ],
+                },
+            ],
         },
         4: {
             semester: '2022/1',

@@ -1,5 +1,4 @@
-import { randomInt } from 'crypto';
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { DateScheduleProps } from '../../interfaces/interface';
 
 import './DateSchedule.scss';
