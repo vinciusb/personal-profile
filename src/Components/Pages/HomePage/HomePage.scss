@@ -79,7 +79,26 @@ $iconS: 80px;
     .facts {
         grid-column: calc($lastCol + 1) / -1;
         grid-row: 1 / -1;
+
+        .idioms {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            background-color: inherit;
+        }
+        .idiom {
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            background-color: inherit;
+
+            img {
+                width: 60px;
+                height: auto;
+            }
+        }
     }
+
     .contact {
         grid-row: 3;
 

@@ -40,11 +40,11 @@ const NavBar: React.FC = () => {
     };
 
     return (
-        <div className="NavBar">
+        <nav className="NavBar">
             <div className="logo">VBF</div>
             <div className="dashboard-icons">{renderIcons()}</div>
             <Icon className="icon" icon="cog" htmlTitle="Settings" onClick={() => null} />
-        </div>
+        </nav>
     );
 };
 

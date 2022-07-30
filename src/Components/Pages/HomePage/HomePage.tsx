@@ -3,6 +3,7 @@ import { HomePageProps } from '../../../interfaces/interface';
 import { Icon } from '@blueprintjs/core';
 
 import './HomePage.scss';
+import ProgressIndicator from '../../ProgressIndicator/ProgressIndicator';
 
 const contacts = [
     {
@@ -61,7 +62,7 @@ const HomePage: React.FC<HomePageProps> = ({ className }: HomePageProps) => {
                 </div>
                 <div className="info">
                     <h1>Vinícius Braga Freire</h1> <br />
-                    Brazilian, 20 years and Information Systems student
+                    Brazilian, 20 years and B.S. in Information Systems
                 </div>
                 <div className="bgEffect">
                     <div />
@@ -72,6 +73,19 @@ const HomePage: React.FC<HomePageProps> = ({ className }: HomePageProps) => {
             <div className="facts secao">
                 Colocar curisidades, % de linguas de programação, colcoar uns destaquezinhso de qual areas eu atuo (DEV,
                 UI, UX ai colocar com umas corzinha bonitinha cada coisa)
+                <div className="stacks"></div>
+                <div className="languages"></div>
+                <div className="idioms">
+                    <ProgressIndicator title="Portuguese" className="idiom">
+                        <img src={require('../../../imgs/brazil-flag.png')} alt="Brazillian flag" />
+                    </ProgressIndicator>
+                    {/* <ProgressIndicator title="French" className="idiom">
+                        <img src={require('../../../imgs/france-flag.png')} alt="Brazillian flag" />
+                    </ProgressIndicator>
+                    <ProgressIndicator title="English" className="idiom">
+                        <img src={require('../../../imgs/uk-flag.png')} alt="Brazillian flag" />
+                    </ProgressIndicator> */}
+                </div>
             </div>
 
             <div className="contact secao">

@@ -41,6 +41,7 @@ interface PageState {
     page: PageType;
 }
 
+// Classes
 interface Class {
     name: string;
     date: {
@@ -61,6 +62,13 @@ interface ClassState {
     };
 }
 
+// Progress Indicator
+interface ProgressIndicatorProps {
+    children: JSX.Element;
+    title: string;
+    className: string;
+}
+
 export type {
     IconProp,
     PageProps,
@@ -71,4 +79,5 @@ export type {
     ClassesPageProps,
     PageState,
     ClassState,
+    ProgressIndicatorProps,
 };
