@@ -30,6 +30,14 @@ const colors = [
         [0, 255, 234],
         [96, 236, 255],
     ],
+    [
+        [20, 20, 20],
+        [70, 70, 70],
+    ],
+    [
+        [70, 70, 70],
+        [120, 120, 120],
+    ],
 ];
 
 const dayConverter = (day: string): number => {
@@ -104,7 +112,7 @@ const DateSchedule: React.FC<DateScheduleProps> = ({ interval, period }: DateSch
     return (
         <div
             className="date-schedule"
-            style={{ gridTemplateRows: `40px repeat(${dif}, 3px auto auto auto auto auto auto) 3px` }}
+            style={{ gridTemplateRows: `40px repeat(${dif}, 3px 1fr 1fr 1fr 1fr 1fr 1fr) 3px` }}
         >
             <th>HOUR</th>
             {renderDays()}

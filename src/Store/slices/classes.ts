@@ -3,7 +3,7 @@ import { createSlice } from '@reduxjs/toolkit';
 import { ClassState } from '../../interfaces/interface';
 
 const initialState: ClassState = {
-    last: 4,
+    last: 8,
     periods: {
         1: {
             semester: '2020/2',
@@ -275,19 +275,268 @@ const initialState: ClassState = {
         },
         5: {
             semester: '2022/2',
-            classes: [],
+            classes: [
+                {
+                    name: 'Information Organization and Processing',
+                    date: [
+                        {
+                            day: 'mon',
+                            hour: [17, 0, 18, 40],
+                        },
+                        {
+                            day: 'wed',
+                            hour: [17, 0, 18, 40],
+                        },
+                    ],
+                },
+                {
+                    name: 'Programming Languages',
+                    date: [
+                        {
+                            day: 'mon',
+                            hour: [19, 0, 20, 40],
+                        },
+                        {
+                            day: 'wed',
+                            hour: [19, 0, 20, 40],
+                        },
+                    ],
+                },
+                {
+                    name: 'Algorithms II',
+                    date: [
+                        {
+                            day: 'tue',
+                            hour: [15, 0, 16, 40],
+                        },
+                        {
+                            day: 'thu',
+                            hour: [15, 0, 16, 40],
+                        },
+                    ],
+                },
+                {
+                    name: 'Fundaments of the Computational Theory',
+                    date: [
+                        {
+                            day: 'tue',
+                            hour: [17, 0, 18, 40],
+                        },
+                        {
+                            day: 'thu',
+                            hour: [17, 0, 18, 40],
+                        },
+                    ],
+                },
+                {
+                    name: 'Introduction to Accounting',
+                    date: [
+                        {
+                            day: 'tue',
+                            hour: [19, 0, 20, 40],
+                        },
+                        {
+                            day: 'thu',
+                            hour: [19, 0, 20, 40],
+                        },
+                    ],
+                },
+                {
+                    name: 'Production Administration',
+                    date: [
+                        {
+                            day: 'fri',
+                            hour: [17, 0, 20, 40],
+                        },
+                    ],
+                },
+            ],
         },
         6: {
             semester: '2023/1',
-            classes: [],
+            classes: [
+                {
+                    name: 'Introduction to Data Science',
+                    date: [
+                        {
+                            day: 'mon',
+                            hour: [15, 0, 16, 40],
+                        },
+                        {
+                            day: 'wed',
+                            hour: [15, 0, 16, 40],
+                        },
+                    ],
+                },
+                {
+                    name: 'Software Engineering I',
+                    date: [
+                        {
+                            day: 'mon',
+                            hour: [17, 0, 18, 40],
+                        },
+                        {
+                            day: 'wed',
+                            hour: [17, 0, 18, 40],
+                        },
+                    ],
+                },
+                {
+                    name: 'Operating System',
+                    date: [
+                        {
+                            day: 'mon',
+                            hour: [19, 0, 20, 40],
+                        },
+                        {
+                            day: 'wed',
+                            hour: [19, 0, 20, 40],
+                        },
+                    ],
+                },
+                {
+                    name: 'Algebra A',
+                    date: [
+                        {
+                            day: 'tue',
+                            hour: [13, 0, 14, 40],
+                        },
+                        {
+                            day: 'thu',
+                            hour: [13, 0, 14, 40],
+                        },
+                    ],
+                },
+                {
+                    name: 'Compilators I',
+                    date: [
+                        {
+                            day: 'tue',
+                            hour: [15, 0, 16, 40],
+                        },
+                        {
+                            day: 'thu',
+                            hour: [15, 0, 16, 40],
+                        },
+                    ],
+                },
+                {
+                    name: 'Machine Learning',
+                    date: [
+                        {
+                            day: 'tue',
+                            hour: [17, 0, 18, 40],
+                        },
+                        {
+                            day: 'thu',
+                            hour: [17, 0, 18, 40],
+                        },
+                    ],
+                },
+            ],
         },
         7: {
             semester: '2023/2',
-            classes: [],
+            classes: [
+                {
+                    name: 'Software Engineering II',
+                    date: [
+                        {
+                            day: 'mon',
+                            hour: [17, 0, 18, 40],
+                        },
+                        {
+                            day: 'wed',
+                            hour: [17, 0, 18, 40],
+                        },
+                    ],
+                },
+                {
+                    name: 'Computers Networks',
+                    date: [
+                        {
+                            day: 'mon',
+                            hour: [19, 0, 20, 40],
+                        },
+                        {
+                            day: 'wed',
+                            hour: [19, 0, 20, 40],
+                        },
+                    ],
+                },
+                {
+                    name: 'Compilators I',
+                    date: [
+                        {
+                            day: 'tue',
+                            hour: [15, 0, 16, 40],
+                        },
+                        {
+                            day: 'thu',
+                            hour: [15, 0, 16, 40],
+                        },
+                    ],
+                },
+                {
+                    name: 'Ethics at Computation',
+                    date: [
+                        {
+                            day: 'tue',
+                            hour: [19, 0, 20, 40],
+                        },
+                    ],
+                },
+                {
+                    name: 'Computation and Society',
+                    date: [
+                        {
+                            day: 'thu',
+                            hour: [19, 0, 20, 40],
+                        },
+                    ],
+                },
+                {
+                    name: 'Financial Administration',
+                    date: [
+                        {
+                            day: 'fri',
+                            hour: [17, 0, 20, 40],
+                        },
+                    ],
+                },
+            ],
         },
         8: {
             semester: '2024/1',
-            classes: [],
+            classes: [
+                {
+                    name: 'Introduction to Artificial Intelligence',
+                    date: [
+                        {
+                            day: 'mon',
+                            hour: [19, 0, 20, 40],
+                        },
+                    ],
+                },
+                {
+                    name: 'Alguma formação livre de 30h',
+                    date: [
+                        {
+                            day: 'wed',
+                            hour: [19, 0, 20, 40],
+                        },
+                    ],
+                },
+                {
+                    name: 'Marketing Administration',
+                    date: [
+                        {
+                            day: 'fri',
+                            hour: [17, 0, 20, 40],
+                        },
+                    ],
+                },
+            ],
         },
         9: {
             semester: '2024/2',
