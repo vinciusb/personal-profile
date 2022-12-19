@@ -76,15 +76,39 @@ const HomePage: React.FC<HomePageProps> = ({ className }: HomePageProps) => {
                 <div className="stacks"></div>
                 <div className="languages"></div>
                 <div className="idioms">
-                    <ProgressIndicator title="Portuguese" className="idiom">
+                    <ProgressIndicator
+                        title="Portuguese"
+                        className="idiom"
+                        angle={210}
+                        colors={['rgb(255, 224, 51)', 'rgb(39, 140, 255)', 'rgb(100, 255, 39)']}
+                        nSec={10}
+                        percentage={1}
+                        dividerWidth={3}
+                    >
                         <img src={require('../../../imgs/brazil-flag.png')} alt="Brazillian flag" />
                     </ProgressIndicator>
-                    {/* <ProgressIndicator title="French" className="idiom">
-                        <img src={require('../../../imgs/france-flag.png')} alt="Brazillian flag" />
+                    <ProgressIndicator
+                        title="French"
+                        className="idiom"
+                        angle={210}
+                        colors={['rgb(15, 39, 255)', 'rgb(255, 255, 255)', 'rgb(255, 20, 20)']}
+                        nSec={10}
+                        percentage={0.4}
+                        dividerWidth={3}
+                    >
+                        <img src={require('../../../imgs/france-flag.png')} alt="French flag" />
                     </ProgressIndicator>
-                    <ProgressIndicator title="English" className="idiom">
-                        <img src={require('../../../imgs/uk-flag.png')} alt="Brazillian flag" />
-                    </ProgressIndicator> */}
+                    <ProgressIndicator
+                        title="English"
+                        className="idiom"
+                        angle={210}
+                        colors={['rgb(255, 20, 20)', 'rgb(255, 255, 255)', 'rgb(15, 39, 255)']}
+                        nSec={10}
+                        percentage={0.8}
+                        dividerWidth={3}
+                    >
+                        <img src={require('../../../imgs/uk-flag.png')} alt="Brittish flag" />
+                    </ProgressIndicator>
                 </div>
             </div>
 

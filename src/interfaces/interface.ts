@@ -67,6 +67,11 @@ interface ProgressIndicatorProps {
     children: JSX.Element;
     title: string;
     className: string;
+    angle: number;
+    colors: string[];
+    nSec: number;
+    percentage: number;
+    dividerWidth: number;
 }
 
 export type {
