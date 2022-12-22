@@ -74,6 +74,12 @@ interface ProgressIndicatorProps {
     dividerWidth: number;
 }
 
+// Stack
+interface StackProps {
+    children: JSX.Element;
+    level: number;
+}
+
 export type {
     IconProp,
     PageProps,
@@ -85,4 +91,5 @@ export type {
     PageState,
     ClassState,
     ProgressIndicatorProps,
+    StackProps,
 };

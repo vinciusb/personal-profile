@@ -1,0 +1,54 @@
+.stack {
+    width: 60px;
+    margin: 0px 6px 6px 0px;
+    padding: 10px;
+    box-shadow: 10px 12px 20px rgba(0, 0, 0, 0.13);
+    border-radius: 12px;
+    font-family: monospace;
+    font-weight: bold;
+    transition: box-shadow 0.2s ease-out, width 0.1s ease-out;
+
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 4px;
+    }
+
+    .level {
+        width: 70%;
+        height: 4px;
+        border-radius: 4px;
+        background-color: rgba(173, 173, 173, 0.514);
+
+        .low,
+        .medium,
+        .high {
+            border-radius: 4px;
+            height: 100%;
+        }
+
+        .low {
+            width: 35%;
+            background-color: rgba(255, 0, 0, 0.719);
+        }
+        .medium {
+            width: 65%;
+            background-color: rgba(250, 171, 52, 0.712);
+        }
+        .high {
+            width: 100%;
+            background-color: rgba(55, 185, 55, 0.705);
+        }
+    }
+
+    &:hover {
+        cursor: pointer;
+        box-shadow: 10px 12px 20px rgba(0, 0, 0, 0.219);
+        // width: 50%;
+    }
+}

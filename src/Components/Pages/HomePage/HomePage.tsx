@@ -4,6 +4,7 @@ import { Icon } from '@blueprintjs/core';
 
 import './HomePage.scss';
 import ProgressIndicator from '../../ProgressIndicator/ProgressIndicator';
+import Stack from '../../Stack/Stack';
 
 const contacts = [
     {
@@ -61,8 +62,7 @@ const HomePage: React.FC<HomePageProps> = ({ className }: HomePageProps) => {
                     <div />
                 </div>
                 <div className="info">
-                    <h1>Vinícius Braga Freire</h1> <br />
-                    Brazilian, 20 years and B.S. in Information Systems
+                    <h1>Vinícius Braga Freire</h1>
                 </div>
                 <div className="bgEffect">
                     <div />
@@ -71,44 +71,84 @@ const HomePage: React.FC<HomePageProps> = ({ className }: HomePageProps) => {
             </div>
 
             <div className="facts secao">
-                Colocar curisidades, % de linguas de programação, colcoar uns destaquezinhso de qual areas eu atuo (DEV,
-                UI, UX ai colocar com umas corzinha bonitinha cada coisa)
-                <div className="stacks"></div>
-                <div className="languages"></div>
+                <div className="about-me">
+                    <h1>About me</h1>
+                    <div className="main-container">
+                        <div className="info">
+                            <img src={require('../../../imgs/aboutme/location.png')} alt="Brazilian flag" />
+                            <p>Belo Horizonte, Brazil</p>
+                        </div>
+                        <div className="info">
+                            <img src={require('../../../imgs/aboutme/age.png')} alt="Age icon" />
+                            <p>20 years</p>
+                        </div>
+                        <div className="info">
+                            <img src={require('../../../imgs/aboutme/education.png')} alt="Info icon" />
+                            <p>B.S. in Information Systems @ UFMG</p>
+                        </div>
+                        <div className="info">
+                            <img src={require('../../../imgs/aboutme/work.png')} alt="Work icon" />
+                            <p>Undergraduate researcher in Satisfatability Modulo Theories @ UFMG</p>
+                        </div>
+                    </div>
+                </div>
+                <div className="stacks">
+                    <h1>Stacks</h1>
+                    <div className="main-container">
+                        <Stack level={3}>
+                            <img src={require('../../../imgs/stacks/c++.png')} alt="C++ icon" />
+                        </Stack>
+                        <Stack level={3}>
+                            <img src={require('../../../imgs/stacks/react.png')} alt="C++ icon" />
+                        </Stack>
+                        <Stack level={1}>
+                            <img src={require('../../../imgs/stacks/wasm.png')} alt="C++ icon" />
+                        </Stack>
+                        <Stack level={3}>
+                            <img src={require('../../../imgs/stacks/typescript.png')} alt="C++ icon" />
+                        </Stack>
+                        <Stack level={2}>
+                            <img src={require('../../../imgs/stacks/rust.png')} alt="C++ icon" />
+                        </Stack>
+                    </div>
+                </div>
                 <div className="idioms">
-                    <ProgressIndicator
-                        title="Portuguese"
-                        className="idiom"
-                        angle={210}
-                        colors={['rgb(255, 224, 51)', 'rgb(39, 140, 255)', 'rgb(100, 255, 39)']}
-                        nSec={10}
-                        percentage={1}
-                        dividerWidth={3}
-                    >
-                        <img src={require('../../../imgs/brazil-flag.png')} alt="Brazillian flag" />
-                    </ProgressIndicator>
-                    <ProgressIndicator
-                        title="French"
-                        className="idiom"
-                        angle={210}
-                        colors={['rgb(15, 39, 255)', 'rgb(255, 255, 255)', 'rgb(255, 20, 20)']}
-                        nSec={10}
-                        percentage={0.4}
-                        dividerWidth={3}
-                    >
-                        <img src={require('../../../imgs/france-flag.png')} alt="French flag" />
-                    </ProgressIndicator>
-                    <ProgressIndicator
-                        title="English"
-                        className="idiom"
-                        angle={210}
-                        colors={['rgb(255, 20, 20)', 'rgb(255, 255, 255)', 'rgb(15, 39, 255)']}
-                        nSec={10}
-                        percentage={0.8}
-                        dividerWidth={3}
-                    >
-                        <img src={require('../../../imgs/uk-flag.png')} alt="Brittish flag" />
-                    </ProgressIndicator>
+                    <h1>Languages</h1>
+                    <div className="main-container">
+                        <ProgressIndicator
+                            title="Portuguese"
+                            className="idiom"
+                            angle={210}
+                            colors={['rgb(255, 224, 51)', 'rgb(39, 140, 255)', 'rgb(100, 255, 39)']}
+                            nSec={10}
+                            percentage={1}
+                            dividerWidth={3}
+                        >
+                            <img src={require('../../../imgs/brazil-flag.png')} alt="Brazillian flag" />
+                        </ProgressIndicator>
+                        <ProgressIndicator
+                            title="French"
+                            className="idiom"
+                            angle={210}
+                            colors={['rgb(15, 39, 255)', 'rgb(255, 255, 255)', 'rgb(255, 20, 20)']}
+                            nSec={10}
+                            percentage={0.4}
+                            dividerWidth={3}
+                        >
+                            <img src={require('../../../imgs/france-flag.png')} alt="French flag" />
+                        </ProgressIndicator>
+                        <ProgressIndicator
+                            title="English"
+                            className="idiom"
+                            angle={210}
+                            colors={['rgb(255, 20, 20)', 'rgb(255, 255, 255)', 'rgb(15, 39, 255)']}
+                            nSec={10}
+                            percentage={0.8}
+                            dividerWidth={3}
+                        >
+                            <img src={require('../../../imgs/uk-flag.png')} alt="Brittish flag" />
+                        </ProgressIndicator>
+                    </div>
                 </div>
             </div>
 
