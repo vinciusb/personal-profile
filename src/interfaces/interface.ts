@@ -80,6 +80,16 @@ interface StackProps {
     level: number;
 }
 
+// Experience
+interface ExperienceProps {
+    title: string;
+    subTitle: string;
+    period: string;
+    description: string;
+    location: string;
+    img: JSX.Element;
+}
+
 export type {
     IconProp,
     PageProps,
@@ -92,4 +102,5 @@ export type {
     ClassState,
     ProgressIndicatorProps,
     StackProps,
+    ExperienceProps,
 };

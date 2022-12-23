@@ -1,0 +1,48 @@
+.experience {
+    padding: 10px;
+    box-shadow: 5px 6px 10px rgba(0, 0, 0, 0.13);
+    border-radius: 12px;
+    transition: box-shadow 0.2s ease-out;
+
+    font-size: 13px;
+    text-align: start;
+
+    > :first-child {
+        display: flex;
+        align-items: center;
+        flex-flow: row;
+
+        .infos {
+            border-left: 1px solid #706c6773;
+            padding-left: 5px;
+            width: 100%;
+
+            .subtitle {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    }
+    h2,
+    h4 {
+        width: fit-content;
+        margin: 0;
+    }
+
+    h4 {
+        // margin-left: 10px;
+        font-weight: normal;
+    }
+
+    img {
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        margin-right: 5px;
+    }
+
+    &:hover {
+        cursor: pointer;
+        box-shadow: 5px 6px 10px subrgba(0, 0, 0, 0.192);
+    }
+}

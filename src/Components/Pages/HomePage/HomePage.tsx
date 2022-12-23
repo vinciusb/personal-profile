@@ -4,7 +4,7 @@ import { Icon } from '@blueprintjs/core';
 
 import './HomePage.scss';
 import ProgressIndicator from '../../ProgressIndicator/ProgressIndicator';
-import Stack from '../../Stack/Stack';
+import Experience from '../../Experience/Experience';
 
 const contacts = [
     {
@@ -88,28 +88,41 @@ const HomePage: React.FC<HomePageProps> = ({ className }: HomePageProps) => {
                         </div>
                         <div className="info">
                             <img src={require('../../../imgs/aboutme/work.png')} alt="Work icon" />
-                            <p>Undergraduate researcher in Satisfatability Modulo Theories @ UFMG</p>
+                            <p>Undergraduate Researcher in Satisfatability Modulo Theories @ UFMG</p>
                         </div>
                     </div>
                 </div>
-                <div className="stacks">
-                    <h1>Stacks</h1>
+                <div className="experiences">
+                    <h1>Previous Experiences</h1>
                     <div className="main-container">
-                        <Stack level={3}>
-                            <img src={require('../../../imgs/stacks/c++.png')} alt="C++ icon" />
-                        </Stack>
-                        <Stack level={3}>
-                            <img src={require('../../../imgs/stacks/react.png')} alt="C++ icon" />
-                        </Stack>
-                        <Stack level={1}>
-                            <img src={require('../../../imgs/stacks/wasm.png')} alt="C++ icon" />
-                        </Stack>
-                        <Stack level={3}>
-                            <img src={require('../../../imgs/stacks/typescript.png')} alt="C++ icon" />
-                        </Stack>
-                        <Stack level={2}>
-                            <img src={require('../../../imgs/stacks/rust.png')} alt="C++ icon" />
-                        </Stack>
+                        <Experience
+                            title="Parallelization and Augmentation for SMT Solver Verifier"
+                            subTitle="Undergraduate Researcher"
+                            period="12/2022 to 05/2023"
+                            description="A bolsa é para trabalhar na extensão da ferramenta Carcará (https://github.com/ufmg-smite/carcara) para verificação e elaboração de
+                            demonstrações SMT no formato Alethe. O objetivo é implementar técnicas de paralelização, além de verificação/elaboração para novas
+                            teorias. A motivação é o uso de demonstrações de solucionadores SMT em aplicações críticas na indústria."
+                            location="UFMG"
+                            img={<img src={require('../../../imgs/experiences/ufmg.png')} />}
+                        />
+                        <Experience
+                            title="Web Visualizer for SMT Solvers Proofs"
+                            subTitle="Undergraduate Researcher"
+                            period="11/2021 to 11/2022"
+                            description="aaaa asd asda "
+                            location="UFMG"
+                            img={<img src={require('../../../imgs/experiences/ufmg.png')} />}
+                        />
+                        <Experience
+                            title="Computacional Vision applied to Automation"
+                            subTitle="Undergraduate Researcher"
+                            period="08/2018 to 07/2019"
+                            description="A bolsa é para trabalhar na extensão da ferramenta Carcará (https://github.com/ufmg-smite/carcara) para verificação e elaboração de
+                            demonstrações SMT no formato Alethe. O objetivo é implementar técnicas de paralelização, além de verificação/elaboração para novas
+                            teorias. A moti"
+                            location="CEFET-MG"
+                            img={<img src={require('../../../imgs/experiences/cefetmg.jpg')} />}
+                        />
                     </div>
                 </div>
                 <div className="idioms">
@@ -119,7 +132,7 @@ const HomePage: React.FC<HomePageProps> = ({ className }: HomePageProps) => {
                             title="Portuguese"
                             className="idiom"
                             angle={210}
-                            colors={['rgb(255, 224, 51)', 'rgb(39, 140, 255)', 'rgb(100, 255, 39)']}
+                            colors={['rgba(255, 224, 51, 0.856)', 'rgb(39, 140, 255, 0.7)', 'rgb(100, 255, 39, 0.6)']}
                             nSec={10}
                             percentage={1}
                             dividerWidth={3}
@@ -130,7 +143,7 @@ const HomePage: React.FC<HomePageProps> = ({ className }: HomePageProps) => {
                             title="French"
                             className="idiom"
                             angle={210}
-                            colors={['rgb(15, 39, 255)', 'rgb(255, 255, 255)', 'rgb(255, 20, 20)']}
+                            colors={['rgb(15, 39, 255, 0.7)', 'rgb(255, 255, 255)', 'rgb(255, 20, 20)']}
                             nSec={10}
                             percentage={0.4}
                             dividerWidth={3}
@@ -141,7 +154,7 @@ const HomePage: React.FC<HomePageProps> = ({ className }: HomePageProps) => {
                             title="English"
                             className="idiom"
                             angle={210}
-                            colors={['rgb(255, 20, 20)', 'rgb(255, 255, 255)', 'rgb(15, 39, 255)']}
+                            colors={['rgb(255, 20, 20, 0.65)', 'rgb(255, 255, 255)', 'rgb(15, 39, 255, 0.7)']}
                             nSec={10}
                             percentage={0.8}
                             dividerWidth={3}
