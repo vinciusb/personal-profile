@@ -98,28 +98,35 @@ const HomePage: React.FC<HomePageProps> = ({ className }: HomePageProps) => {
                         <Experience
                             title="Parallelization and Augmentation for SMT Solver Verifier"
                             subTitle="Undergraduate Researcher"
-                            period="12/2022 to 05/2023"
-                            description="A bolsa é para trabalhar na extensão da ferramenta Carcará (https://github.com/ufmg-smite/carcara) para verificação e elaboração de
-                            demonstrações SMT no formato Alethe. O objetivo é implementar técnicas de paralelização, além de verificação/elaboração para novas
-                            teorias. A motivação é o uso de demonstrações de solucionadores SMT em aplicações críticas na indústria."
+                            period="12/2022 - 05/2023"
+                            description={[
+                                'Worked on the parallelization of Carcará, an SMT  proofs verification and elaboration tool.',
+                                'Implemented verifications/elaborations for new theories.',
+                            ]}
                             location="UFMG"
                             img={<img src={require('../../../imgs/experiences/ufmg.png')} />}
                         />
                         <Experience
-                            title="Web Visualizer for SMT Solvers Proofs"
+                            title="Web Visualizer for SMT Solver Proofs"
                             subTitle="Undergraduate Researcher"
-                            period="11/2021 to 11/2022"
-                            description="aaaa asd asda "
+                            period="11/2021 - 11/2022"
+                            description={[
+                                'Project whose objective is to provide customizable views through graphs and tables to improve the comprehension of the proofs and the operation of SMT solvers, particularly the cvc5.',
+                                'Developed the visualizer in TypeScript using the React and Redux libraries.',
+                                'Contributed to the open-source system cvc5 implementing updates in the print and traverse of the proofs, in addition to a Web Assembly compilation method, allowing the solver to run in web browsers.',
+                            ]}
                             location="UFMG"
                             img={<img src={require('../../../imgs/experiences/ufmg.png')} />}
                         />
                         <Experience
                             title="Computacional Vision applied to Automation"
                             subTitle="Undergraduate Researcher"
-                            period="08/2018 to 07/2019"
-                            description="A bolsa é para trabalhar na extensão da ferramenta Carcará (https://github.com/ufmg-smite/carcara) para verificação e elaboração de
-                            demonstrações SMT no formato Alethe. O objetivo é implementar técnicas de paralelização, além de verificação/elaboração para novas
-                            teorias. A moti"
+                            period="08/2018 - 07/2019"
+                            description={[
+                                'Multidisciplinary project which objective is to apply computational vision techniques, using low-cost hardware (Raspberry Pi), at industrial automation.',
+                                'Developed a system and your interface in Python to control the quality of cookies on a production belt using the computational vision techniques learned during the project. Also integrated the software with the electric part of the system.',
+                                'Documented the process, the techniques used and the evolution of the project at logbook and final report.',
+                            ]}
                             location="CEFET-MG"
                             img={<img src={require('../../../imgs/experiences/cefetmg.jpg')} />}
                         />

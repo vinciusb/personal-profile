@@ -85,7 +85,7 @@ interface ExperienceProps {
     title: string;
     subTitle: string;
     period: string;
-    description: string;
+    description: string[];
     location: string;
     img: JSX.Element;
 }

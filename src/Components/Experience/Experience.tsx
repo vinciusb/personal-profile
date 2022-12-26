@@ -25,7 +25,13 @@ const Experience: React.FC<ExperienceProps> = ({
                     <h4>{`@ ${location}`}</h4>
                 </div>
             </div>
-            {expanded && <p>{description}</p>}
+            {expanded && (
+                <ul>
+                    {description.map((str, id) => (
+                        <li key={id}>{str}</li>
+                    ))}
+                </ul>
+            )}
         </div>
     );
 };

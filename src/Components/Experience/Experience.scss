@@ -28,10 +28,15 @@
         width: fit-content;
         margin: 0;
     }
-
     h4 {
-        // margin-left: 10px;
         font-weight: normal;
+    }
+    ul {
+        padding-left: 45px;
+    }
+    li {
+        margin: 0 0 4px 0;
+        text-align: justify;
     }
 
     img {

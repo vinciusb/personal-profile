@@ -2,6 +2,34 @@ $lastCol: 8;
 $offset: 10px;
 $iconS: 80px;
 
+@mixin scroll-style(
+    $size: 10px,
+    $thumb: none,
+    $thumb-color: grey,
+    $thumb-radius: 10px,
+    $track-color: transparent,
+    $track-radius: 10px
+) {
+    // Respaldo para Firefox
+    scrollbar-color: $thumb-color $track-color;
+    scrollbar-width: thin;
+
+    // Navegadores basados en webkit
+    &::-webkit-scrollbar {
+        width: $size;
+        height: $size;
+        &-track {
+            background-color: $track-color;
+            border-radius: $track-radius;
+        }
+        &-thumb {
+            background-color: $thumb-color;
+            background-image: $thumb;
+            border-radius: $thumb-radius;
+        }
+    }
+}
+
 .home-page {
     grid-template-rows: 300px 160px auto;
 
@@ -126,9 +154,28 @@ $iconS: 80px;
             flex-flow: column;
 
             .main-container {
+                max-height: 380px;
+                overflow-y: scroll;
+                padding-bottom: 15px;
+                padding-right: 15px;
+
                 > :not(:last-child) {
                     margin-bottom: 8px;
                 }
+
+                @include scroll-style(
+                    $size: var(--scroll-size, 20px),
+                    $thumb: var(--scroll-thumb, none),
+                    $thumb-color: var(--scroll-thumb-color, grey),
+                    $thumb-radius: var(--scroll-thumb-radius, var(--scroll-radius)),
+                    $track-color: var(--scroll-track, transparent),
+                    $track-radius: var(--scroll-track-radius, var(--scroll-radius))
+                );
+
+                --scroll-size: 6px;
+                --scroll-radius: 10px;
+                --scroll-track: rgb(255 255 255 / 10%);
+                --scroll-thumb-color: rgb(0 0 0 / 80%);
             }
         }
 
