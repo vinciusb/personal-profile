@@ -1,3 +1,61 @@
 .progress-page {
-    background-color: yellow;
+    .portfolio {
+        grid-column: 1 / 10;
+        grid-row: 1 / -1;
+        background-color: blue;
+        padding: 45px 35px !important;
+
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(12, 1fr);
+
+        #past {
+            grid-column: 1 / 2;
+            grid-row: 1 / -1;
+        }
+        .main-frame {
+            grid-column: 2 / 12;
+            grid-row: 2/ 11;
+
+            padding: 20px;
+        }
+        #next {
+            grid-column: 12 / -1;
+            grid-row: 1 / -1;
+        }
+        .progress-points {
+            grid-column: 2 / 12;
+            grid-row: 11 / 12;
+
+            display: flex;
+            justify-content: center;
+        }
+        .point {
+            width: 13px;
+            height: 13px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(207, 181, 181);
+            transition: background-color 0.2s ease-out;
+
+            margin: 0 7px;
+        }
+        .highlighted {
+            background-color: rgb(209, 49, 49);
+        }
+        .transition-button {
+            cursor: pointer;
+            color: rgb(209, 49, 49);
+            font-size: 50px;
+            align-self: center;
+            user-select: none;
+        }
+    }
+
+    .stacks {
+        grid-column: 11/-1;
+        grid-row: 1/-1;
+    }
 }
