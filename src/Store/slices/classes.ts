@@ -3,7 +3,7 @@ import { createSlice } from '@reduxjs/toolkit';
 import { ClassState } from '../../interfaces/interface';
 
 const initialState: ClassState = {
-    last: 8,
+    last: 6,
     periods: {
         1: {
             semester: '2020/2',

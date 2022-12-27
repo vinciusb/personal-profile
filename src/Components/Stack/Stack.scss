@@ -1,8 +1,8 @@
 .stack {
-    width: 80px;
+    width: 35px;
     margin: 0px 6px 6px 0px;
     padding: 10px;
-    box-shadow: 10px 12px 20px rgba(0, 0, 0, 0.13);
+    box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.13);
     border-radius: 12px;
     font-family: monospace;
     font-weight: bold;
@@ -48,7 +48,7 @@
 
     &:hover {
         cursor: pointer;
-        box-shadow: 10px 12px 20px rgba(0, 0, 0, 0.219);
-        // width: 50%;
+
+        box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.212);
     }
 }
