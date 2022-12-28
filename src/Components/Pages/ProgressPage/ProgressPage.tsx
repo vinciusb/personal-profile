@@ -2,7 +2,14 @@ import React, { useReducer } from 'react';
 import { ProgressPageProps, Project } from '../../../interfaces/interface';
 import Stack from '../../Stack/Stack';
 
+import { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+
 import './ProgressPage.scss';
+import './Swiper.scss';
 
 const projects: Project[] = [
     {
@@ -75,66 +82,51 @@ const stacksInfos: { [s: string]: { img: string; level: number } } = {
 const N_PROJECTS = projects.length;
 
 const ProgressPage: React.FC<ProgressPageProps> = ({ className }: ProgressPageProps) => {
-    const [count, setCount] = useReducer((state: number, mode: boolean): number => {
-        if (mode) {
-            return state === N_PROJECTS - 1 ? 0 : state + 1;
-        }
-        return state === 0 ? N_PROJECTS - 1 : state - 1;
-    }, 0);
-
-    const renderPoints = (): JSX.Element => {
-        return (
-            <div className="progress-points">
-                {Array.from(Array(N_PROJECTS), (_, id) => (
-                    <div key={id} className={'point ' + (id === count ? 'highlighted' : '')}></div>
-                ))}
-            </div>
-        );
-    };
-
     const renderProject = (i: number): JSX.Element => {
         const curProj = projects[i];
         return (
-            <div className="main-frame">
-                <img src={curProj.img} alt={curProj.name} />
-                <div className="infos">
-                    <div>
-                        <h3>{curProj.name}</h3>
-                        <p>{curProj.description}</p>
-                    </div>
-                    <a href={curProj.url} target="_blank" rel="noreferrer">
-                        <div className="check-bt">
-                            <span>Check</span>
-                            <span>🡲</span>
+            <SwiperSlide>
+                <div className="main-frame">
+                    <img src={curProj.img} alt={curProj.name} />
+                    <div className="infos">
+                        <div>
+                            <h3>{curProj.name}</h3>
+                            <p>{curProj.description}</p>
                         </div>
-                    </a>
-                    <div className="stacks">
-                        {curProj.stacks.map((s, id) => (
-                            <Stack key={id} level={stacksInfos[s].level}>
-                                <img src={stacksInfos[s].img} alt={s} />
-                            </Stack>
-                        ))}
+                        <a href={curProj.url} target="_blank" rel="noreferrer">
+                            <div className="check-bt">
+                                <span>Check</span>
+                                <span>🡲</span>
+                            </div>
+                        </a>
+                        <div className="stacks">
+                            {curProj.stacks.map((s, id) => (
+                                <Stack key={id} level={stacksInfos[s].level}>
+                                    <img src={stacksInfos[s].img} alt={s} />
+                                </Stack>
+                            ))}
+                        </div>
                     </div>
                 </div>
-            </div>
+            </SwiperSlide>
         );
     };
 
     return (
         <div className={'progress-page ' + className}>
-            <div className="portfolio secao">
-                <h1>Most recent projects</h1>
-                <div id="past" className="transition-button" onClick={() => setCount(false)}>
-                    {'<'}
-                </div>
-                {renderProject(count)}
-                <div id="next" className="transition-button" onClick={() => setCount(true)}>
-                    {'>'}
-                </div>
-                {renderPoints()}
-            </div>
-
-            <div className="stacks secao"></div>
+            <h1>Portfolio</h1>
+            <Swiper
+                cssMode={true}
+                navigation={true}
+                pagination={true}
+                mousewheel={true}
+                loop={true}
+                keyboard={true}
+                modules={[Navigation, Pagination, Mousewheel, Keyboard]}
+                className="mySwiper portfolio secao"
+            >
+                {Array.from(Array(N_PROJECTS), (_, id) => renderProject(id))}
+            </Swiper>
         </div>
     );
 };
