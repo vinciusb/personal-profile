@@ -42,8 +42,9 @@ $iconS: 80px;
             margin-left: 85px;
             background-color: red;
             border-radius: 100%;
-            width: 200px;
-            height: 200px;
+            min-width: 200px;
+            min-height: 200px;
+            z-index: 3;
 
             :nth-child(1) {
                 background-color: rgb(255, 187, 0);
@@ -111,6 +112,7 @@ $iconS: 80px;
         display: flex;
         flex-flow: column;
         justify-content: space-between;
+        text-align: start;
 
         & > * > h1 {
             align-self: flex-start;
@@ -269,5 +271,50 @@ $iconS: 80px;
     .intro,
     .contact {
         grid-column: 1 / #{$lastCol};
+    }
+}
+
+@media (max-width: 1250px) {
+    .home-page {
+        .intro {
+            grid-column: 1/7;
+        }
+        .facts {
+            grid-column: 8 / -1;
+        }
+        .contact {
+            grid-column: 1/7;
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .home-page {
+        grid-template-rows: 300px auto auto;
+        gap: 30px 0px;
+
+        .intro,
+        .contact {
+            grid-column: 1 / -1;
+        }
+
+        .facts {
+            grid-column: 1 / -1;
+            grid-row: 2 / 3;
+
+            .idioms .main-container {
+                justify-content: space-around;
+            }
+        }
+    }
+}
+
+@media (max-width: 530px) {
+    .home-page .intro {
+        .img {
+            margin: 0;
+            align-self: center;
+        }
+        flex-flow: column;
     }
 }

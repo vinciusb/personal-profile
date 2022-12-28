@@ -22,6 +22,7 @@
             padding: 20px 50px 20px 100px;
             display: flex;
             width: 100%;
+            max-height: fit-content;
             align-items: center;
             justify-content: start;
             text-align: start;
@@ -91,5 +92,43 @@
     .stacks {
         grid-column: 11/-1;
         grid-row: 1/-1;
+    }
+}
+
+@media (max-width: 1000px) {
+    .progress-page .portfolio {
+        grid-column: 1 / -1;
+        .main-frame {
+            padding: 20px 20px 20px 40px;
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .progress-page .portfolio {
+        padding-top: 0px !important;
+        .main-frame {
+            flex-flow: column;
+            padding: 0px 20px;
+
+            > img {
+                margin: 0;
+                width: 250px;
+                height: 250px;
+            }
+            .infos {
+                margin: 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .progress-page .portfolio .main-frame {
+        font-size: 17px;
+        > img {
+            width: 180px;
+            height: 180px;
+        }
     }
 }

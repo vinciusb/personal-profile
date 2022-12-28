@@ -98,7 +98,7 @@ const HomePage: React.FC<HomePageProps> = ({ className }: HomePageProps) => {
                         <Experience
                             title="Parallelization and Augmentation for SMT Solver Verifier"
                             subTitle="Undergraduate Researcher"
-                            period="12/2022 - 05/2023"
+                            period="12/22 - 05/23"
                             description={[
                                 'Worked on the parallelization of Carcará, an SMT  proofs verification and elaboration tool.',
                                 'Implemented verifications/elaborations for new theories.',
@@ -109,7 +109,7 @@ const HomePage: React.FC<HomePageProps> = ({ className }: HomePageProps) => {
                         <Experience
                             title="Web Visualizer for SMT Solver Proofs"
                             subTitle="Undergraduate Researcher"
-                            period="11/2021 - 11/2022"
+                            period="11/21 - 11/22"
                             description={[
                                 'Project whose objective is to provide customizable views through graphs and tables to improve the comprehension of the proofs and the operation of SMT solvers, particularly the cvc5.',
                                 'Developed the visualizer in TypeScript using the React and Redux libraries.',
@@ -121,7 +121,7 @@ const HomePage: React.FC<HomePageProps> = ({ className }: HomePageProps) => {
                         <Experience
                             title="Computacional Vision applied to Automation"
                             subTitle="Undergraduate Researcher"
-                            period="08/2018 - 07/2019"
+                            period="08/18 - 07/19"
                             description={[
                                 'Multidisciplinary project which objective is to apply computational vision techniques, using low-cost hardware (Raspberry Pi), at industrial automation.',
                                 'Developed a system and your interface in Python to control the quality of cookies on a production belt using the computational vision techniques learned during the project. Also integrated the software with the electric part of the system.',

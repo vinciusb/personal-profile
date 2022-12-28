@@ -12,3 +12,9 @@
         align-self: center;
     }
 }
+
+@media (max-width: 860px) {
+    .classes-page .periods {
+        grid-column: 1 / -1;
+    }
+}

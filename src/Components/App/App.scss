@@ -20,3 +20,48 @@ $bColor: #e7dfd6;
     margin: 0;
   }
 }
+
+@media (max-width: 1000px) {
+  .App {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+
+    padding: 0px 50px 20px 50px;
+    height: fit-content;
+    min-height: 100%;
+  }
+
+  .NavBar {
+    grid-template-columns: 80px 1fr 80px;
+    grid-template-rows: 1fr;
+    column-gap: 120px;
+    padding: 10px 0;
+    height: fit-content;
+
+    .dashboard-icons {
+      grid-template-rows: 1fr;
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .NavBar {
+    column-gap: 40px;
+  }
+}
+
+@media (max-width: 500px) {
+  .App {
+    padding: 0px 20px 20px 20px;
+  }
+  .NavBar {
+    column-gap: 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .App {
+    padding: 0px 10px 20px 10px;
+  }
+}
