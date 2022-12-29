@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/vinciusb/personal-profile/static/css/main.54e9003b.css",
+    "main.js": "/vinciusb/personal-profile/static/js/main.5d7e4ba6.js",
+    "static/js/787.f586a476.chunk.js": "/vinciusb/personal-profile/static/js/787.f586a476.chunk.js",
+    "static/media/weather.jpg": "/vinciusb/personal-profile/static/media/weather.d84e38aa9a6a0804b139.jpg",
+    "static/media/geometry.png": "/vinciusb/personal-profile/static/media/geometry.f32a38672a6f55f223a9.png",
+    "static/media/carcara.jpg": "/vinciusb/personal-profile/static/media/carcara.54d6d4337ecf5b1cc0f6.jpg",
+    "static/media/python.png": "/vinciusb/personal-profile/static/media/python.1eaaad356f1e20a2540f.png",
+    "static/media/rust.png": "/vinciusb/personal-profile/static/media/rust.18e8d8f04dffae58a8da.png",
+    "static/media/brazil-flag.png": "/vinciusb/personal-profile/static/media/brazil-flag.a679b9731277c2e84ae6.png",
+    "static/media/react.png": "/vinciusb/personal-profile/static/media/react.86c8d9eba03e29814d2a.png",
+    "static/media/cefetmg.jpg": "/vinciusb/personal-profile/static/media/cefetmg.720a1fc83794a0a4610a.jpg",
+    "static/media/wasm.png": "/vinciusb/personal-profile/static/media/wasm.6a2b59046b83588c9de2.png",
+    "static/media/proof-visualizer.png": "/vinciusb/personal-profile/static/media/proof-visualizer.aace67987c651bba8fe6.png",
+    "static/media/c++.png": "/vinciusb/personal-profile/static/media/c++.24a8f93854ab092f17a7.png",
+    "static/media/cvc5.png": "/vinciusb/personal-profile/static/media/cvc5.03d7d4ed5a58d9803194.png",
+    "static/media/france-flag.png": "/vinciusb/personal-profile/static/media/france-flag.aa8d447529bcf35ecb87.png",
+    "static/media/uk-flag.png": "/vinciusb/personal-profile/static/media/uk-flag.c14d3d192e28b2ada8af.png",
+    "static/media/location.png": "/vinciusb/personal-profile/static/media/location.084da7f156b6c3f45476.png",
+    "static/media/age.png": "/vinciusb/personal-profile/static/media/age.f29ec8be533a27a8abd4.png",
+    "static/media/typescript.png": "/vinciusb/personal-profile/static/media/typescript.0e441eed78ba11c335df.png",
+    "index.html": "/vinciusb/personal-profile/index.html",
+    "main.54e9003b.css.map": "/vinciusb/personal-profile/static/css/main.54e9003b.css.map",
+    "main.5d7e4ba6.js.map": "/vinciusb/personal-profile/static/js/main.5d7e4ba6.js.map",
+    "787.f586a476.chunk.js.map": "/vinciusb/personal-profile/static/js/787.f586a476.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.54e9003b.css",
+    "static/js/main.5d7e4ba6.js"
+  ]
+}
