@@ -3,7 +3,7 @@ import { createSlice } from '@reduxjs/toolkit';
 import { ClassState } from '../../interfaces/interface';
 
 const initialState: ClassState = {
-    last: 6,
+    last: 9,
     periods: {
         1: {
             semester: '2020/2',
@@ -359,12 +359,12 @@ const initialState: ClassState = {
                     name: 'Introduction to Data Science',
                     date: [
                         {
-                            day: 'mon',
-                            hour: [15, 0, 16, 40],
+                            day: 'tue',
+                            hour: [19, 0, 20, 40],
                         },
                         {
-                            day: 'wed',
-                            hour: [15, 0, 16, 40],
+                            day: 'thu',
+                            hour: [19, 0, 20, 40],
                         },
                     ],
                 },
@@ -465,15 +465,68 @@ const initialState: ClassState = {
                     ],
                 },
                 {
-                    name: 'Compilators I',
+                    name: 'Human-Computer Interaction',
                     date: [
                         {
                             day: 'tue',
-                            hour: [15, 0, 16, 40],
+                            hour: [17, 0, 18, 40],
                         },
                         {
                             day: 'thu',
-                            hour: [15, 0, 16, 40],
+                            hour: [17, 0, 18, 40],
+                        },
+                    ],
+                },
+                {
+                    name: 'Cybersecurity',
+                    date: [
+                        {
+                            day: 'tue',
+                            hour: [19, 0, 20, 40],
+                        },
+                        {
+                            day: 'thu',
+                            hour: [19, 0, 20, 40],
+                        },
+                    ],
+                },
+                {
+                    name: 'Costs Administration',
+                    date: [
+                        {
+                            day: 'fri',
+                            hour: [17, 0, 20, 40],
+                        },
+                    ],
+                },
+            ],
+        },
+        8: {
+            semester: '2024/1',
+            classes: [
+                {
+                    name: 'Reliability in Distributed Network Systems',
+                    date: [
+                        {
+                            day: 'mon',
+                            hour: [17, 0, 18, 40],
+                        },
+                        {
+                            day: 'wed',
+                            hour: [17, 0, 18, 40],
+                        },
+                    ],
+                },
+                {
+                    name: 'Descriptive Analysis and Data Mining',
+                    date: [
+                        {
+                            day: 'tue',
+                            hour: [17, 0, 18, 40],
+                        },
+                        {
+                            day: 'thu',
+                            hour: [17, 0, 18, 40],
                         },
                     ],
                 },
@@ -496,6 +549,54 @@ const initialState: ClassState = {
                     ],
                 },
                 {
+                    name: 'Marketing Administration',
+                    date: [
+                        {
+                            day: 'fri',
+                            hour: [17, 0, 20, 40],
+                        },
+                    ],
+                },
+                {
+                    name: 'Undergraduate Thesis I',
+                    date: [
+                        {
+                            day: 'tue',
+                            hour: [21, 0, 22, 40],
+                        },
+                        {
+                            day: 'mon',
+                            hour: [19, 0, 20, 40],
+                        },
+                        {
+                            day: 'wed',
+                            hour: [19, 0, 20, 40],
+                        },
+                    ],
+                },
+            ],
+        },
+        9: {
+            semester: '2024/2',
+            classes: [
+                {
+                    name: 'Undergraduate Thesis II',
+                    date: [
+                        {
+                            day: 'mon',
+                            hour: [19, 0, 20, 40],
+                        },
+                        {
+                            day: 'tue',
+                            hour: [19, 0, 20, 40],
+                        },
+                        {
+                            day: 'wed',
+                            hour: [19, 0, 20, 40],
+                        },
+                    ],
+                },
+                {
                     name: 'Financial Administration',
                     date: [
                         {
@@ -505,42 +606,6 @@ const initialState: ClassState = {
                     ],
                 },
             ],
-        },
-        8: {
-            semester: '2024/1',
-            classes: [
-                {
-                    name: 'Introduction to Artificial Intelligence',
-                    date: [
-                        {
-                            day: 'mon',
-                            hour: [19, 0, 20, 40],
-                        },
-                    ],
-                },
-                {
-                    name: 'Alguma formação livre de 30h',
-                    date: [
-                        {
-                            day: 'wed',
-                            hour: [19, 0, 20, 40],
-                        },
-                    ],
-                },
-                {
-                    name: 'Marketing Administration',
-                    date: [
-                        {
-                            day: 'fri',
-                            hour: [17, 0, 20, 40],
-                        },
-                    ],
-                },
-            ],
-        },
-        9: {
-            semester: '2024/2',
-            classes: [],
         },
     },
 };

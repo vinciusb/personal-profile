@@ -96,12 +96,23 @@ const HomePage: React.FC<HomePageProps> = ({ className }: HomePageProps) => {
                     <h1>Previous Experiences</h1>
                     <div className="main-container">
                         <Experience
+                            title="Back-end Developer"
+                            subTitle="Internship"
+                            period="08/23 - Now"
+                            description={[
+                                'Worked on the Solutions Architecture team, whose objective is to create new architectures and implementations for legacy parts of the enterprise product.',
+                                'Mainly focused on the refactorization and creation of new .NET web APIs with a focus on better performance and scalability.',
+                                'Creation of new data injection and treatment pipelines for large amounts of data in the mobile internet market using Spark.',
+                            ]}
+                            location="Bwtech"
+                            img={<img src={require('../../../imgs/experiences/bwtech.jpeg')} />}
+                        />
+                        <Experience
                             title="Parallelization and Augmentation for SMT Solver Verifier"
                             subTitle="Undergraduate Researcher"
-                            period="12/22 - 05/23"
+                            period="12/22 - 07/23"
                             description={[
-                                'Worked on the parallelization of Carcará, an SMT  proofs verification and elaboration tool.',
-                                'Implemented verifications/elaborations for new theories.',
+                                'Worked on the parallelization of Carcará, an SMT proofs verification and elaboration tool based on graphs.',
                             ]}
                             location="UFMG"
                             img={<img src={require('../../../imgs/experiences/ufmg.png')} />}
@@ -123,9 +134,9 @@ const HomePage: React.FC<HomePageProps> = ({ className }: HomePageProps) => {
                             subTitle="Undergraduate Researcher"
                             period="08/18 - 07/19"
                             description={[
-                                'Multidisciplinary project which objective is to apply computational vision techniques, using low-cost hardware (Raspberry Pi), at industrial automation.',
-                                'Developed a system and your interface in Python to control the quality of cookies on a production belt using the computational vision techniques learned during the project. Also integrated the software with the electric part of the system.',
-                                'Documented the process, the techniques used and the evolution of the project at logbook and final report.',
+                                'Multidisciplinary project whose objective is to apply computer vision techniques, using low-cost hardware (Raspberry Pi), for industrial automation.',
+                                'Developed a system and your interface in Python to control the quality of cookies on a production belt using the computer vision techniques learned during the project. Also integrated the software with the electric part of the system.',
+                                "Documented the process, techniques used and the project's evolution in a logbook and final report.",
                             ]}
                             location="CEFET-MG"
                             img={<img src={require('../../../imgs/experiences/cefetmg.jpg')} />}
