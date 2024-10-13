@@ -3,7 +3,7 @@ import { createSlice } from '@reduxjs/toolkit';
 import { ClassState } from '../../interfaces/interface';
 
 const initialState: ClassState = {
-    last: 9,
+    last: 10,
     periods: {
         1: {
             semester: '2020/2',
@@ -505,20 +505,7 @@ const initialState: ClassState = {
             semester: '2024/1',
             classes: [
                 {
-                    name: 'Reliability in Distributed Network Systems',
-                    date: [
-                        {
-                            day: 'mon',
-                            hour: [17, 0, 18, 40],
-                        },
-                        {
-                            day: 'wed',
-                            hour: [17, 0, 18, 40],
-                        },
-                    ],
-                },
-                {
-                    name: 'Descriptive Analysis and Data Mining',
+                    name: 'Descriptive Learning and Data Mining',
                     date: [
                         {
                             day: 'tue',
@@ -557,37 +544,33 @@ const initialState: ClassState = {
                         },
                     ],
                 },
-                {
-                    name: 'Undergraduate Thesis I',
-                    date: [
-                        {
-                            day: 'tue',
-                            hour: [21, 0, 22, 40],
-                        },
-                        {
-                            day: 'mon',
-                            hour: [19, 0, 20, 40],
-                        },
-                        {
-                            day: 'wed',
-                            hour: [19, 0, 20, 40],
-                        },
-                    ],
-                },
             ],
         },
         9: {
             semester: '2024/2',
             classes: [
                 {
-                    name: 'Undergraduate Thesis II',
+                    name: 'Undergraduate Thesis I',
                     date: [
                         {
                             day: 'mon',
-                            hour: [19, 0, 20, 40],
+                            hour: [17, 0, 18, 40],
+                        },
+                        {
+                            day: 'wed',
+                            hour: [17, 0, 18, 40],
                         },
                         {
                             day: 'tue',
+                            hour: [17, 0, 18, 40],
+                        },
+                    ],
+                },
+                {
+                    name: 'Cloud Computing',
+                    date: [
+                        {
+                            day: 'mon',
                             hour: [19, 0, 20, 40],
                         },
                         {
@@ -602,6 +585,28 @@ const initialState: ClassState = {
                         {
                             day: 'fri',
                             hour: [17, 0, 20, 40],
+                        },
+                    ],
+                },
+            ],
+        },
+        10: {
+            semester: '2025/1',
+            classes: [
+                {
+                    name: 'Undergraduate Thesis II',
+                    date: [
+                        {
+                            day: 'mon',
+                            hour: [17, 0, 18, 40],
+                        },
+                        {
+                            day: 'wed',
+                            hour: [17, 0, 18, 40],
+                        },
+                        {
+                            day: 'tue',
+                            hour: [17, 0, 18, 40],
                         },
                     ],
                 },

@@ -80,7 +80,7 @@ const HomePage: React.FC<HomePageProps> = ({ className }: HomePageProps) => {
                         </div>
                         <div className="info">
                             <img src={require('../../../imgs/aboutme/age.png')} alt="Age icon" />
-                            <p>20 years</p>
+                            <p>23 years</p>
                         </div>
                         <div className="info">
                             <img src={require('../../../imgs/aboutme/education.png')} alt="Info icon" />
@@ -88,7 +88,7 @@ const HomePage: React.FC<HomePageProps> = ({ className }: HomePageProps) => {
                         </div>
                         <div className="info">
                             <img src={require('../../../imgs/aboutme/work.png')} alt="Work icon" />
-                            <p>Undergraduate Researcher in Satisfatability Modulo Theories @ UFMG</p>
+                            <p>Back-end developer @ Inter</p>
                         </div>
                     </div>
                 </div>
@@ -98,7 +98,18 @@ const HomePage: React.FC<HomePageProps> = ({ className }: HomePageProps) => {
                         <Experience
                             title="Back-end Developer"
                             subTitle="Internship"
-                            period="08/23 - Now"
+                            period="04/24 - Now"
+                            description={[
+                                'Improved the quality of highly critical microservices in the investment sector. To this end, I focused on increasing their scalability and performance in the AWS cloud environment.',
+                                'Implemented new investment products through Spring and Micronaut applications.',
+                            ]}
+                            location="Inter"
+                            img={<img src={require('../../../imgs/experiences/inter.png')} />}
+                        />
+                        <Experience
+                            title="Back-end Developer"
+                            subTitle="Internship"
+                            period="08/23 - 03/24"
                             description={[
                                 'Worked on the Solutions Architecture team, whose objective is to create new architectures and implementations for legacy parts of the enterprise product.',
                                 'Mainly focused on the refactorization and creation of new .NET web APIs with a focus on better performance and scalability.',
